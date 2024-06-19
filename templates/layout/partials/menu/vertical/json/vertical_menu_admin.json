@@ -1,0 +1,254 @@
+{
+  "menu": [
+    {
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "dashboard",
+      "badge": ["primary", "5"],
+      "permission": "permission.view_permission",
+      "submenu": [
+        {
+          "url": "index",
+          "name": "Analytics",
+          "slug": "dashboard-analytics"
+        },
+        {
+          "url": "/app/ecommerce/dashboard",
+          "external": true,
+          "name": "eCommerce",
+          "slug": "app-ecommerce-dashboard"
+        }
+      ]
+    },
+
+    {
+      "menu_header": "Apps & Pages"
+    },
+    {
+      "url": "app-email",
+      "name": "Email",
+      "icon": "menu-icon tf-icons ti ti-mail",
+      "slug": "app-email",
+      "permission": "user.view_user",
+      "role": "admin",
+      "submenu": [
+        {
+          "url": "app-academy-dashboard",
+          "name": "Dashboard",
+          "slug": "app-academy-dashboard"
+        }
+      ]
+    },
+
+    {
+      "url": "app-chat",
+      "name": "Chat",
+      "icon": "menu-icon tf-icons ti ti-messages",
+      "slug": "app-chat"
+    },
+    {
+      "url": "app-calendar",
+      "name": "Calendar",
+      "icon": "menu-icon tf-icons ti ti-calendar",
+      "slug": "app-calendar"
+    },
+    {
+      "url": "app-kanban",
+      "name": "Kanban",
+      "icon": "menu-icon tf-icons ti ti-layout-kanban",
+      "slug": "app-kanban"
+    },
+
+    {
+      "name": "Academy",
+      "icon": "menu-icon tf-icons ti ti-book",
+      "slug": "app-academy",
+      "submenu": [
+        {
+          "url": "app-academy-dashboard",
+          "name": "Dashboard",
+          "slug": "app-academy-dashboard"
+        },
+        {
+          "url": "app-academy-course",
+          "name": "My Course",
+          "slug": "app-academy-course"
+        },
+        {
+          "url": "app-academy-course-details",
+          "name": "Course Details",
+          "slug": "app-academy-course-details"
+        }
+      ]
+    },
+
+    {
+      "name": "Users",
+      "icon": "menu-icon tf-icons ti ti-users",
+      "permission": "user.view_user",
+      "slug": "app-user",
+      "role": "admin",
+      "submenu": [
+        {
+          "url": "app-user-list",
+          "name": "List",
+          "slug": "app-user-list"
+        },
+        {
+          "name": "View",
+          "slug": "app-user-view",
+          "submenu": [
+            {
+              "url": "app-user-view-account",
+              "name": "Account",
+              "slug": "app-user-view-account"
+            },
+            {
+              "url": "app-user-view-security",
+              "name": "Security",
+              "slug": "app-user-view-security"
+            },
+            {
+              "url": "app-user-view-billing",
+              "name": "Billing & Plans",
+              "slug": "app-user-view-billing"
+            },
+            {
+              "url": "app-user-view-notifications",
+              "name": "Notifications",
+              "slug": "app-user-view-notifications"
+            },
+            {
+              "url": "app-user-view-connections",
+              "name": "Connections",
+              "slug": "app-user-view-connections"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Roles & Permissions",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "permission": "permission.view_permission",
+      "slug": "app-access",
+      "role": "admin",
+      "submenu": [
+        {
+          "url": "app-access-roles",
+          "name": "Roles",
+          "slug": "app-access-roles"
+        },
+        {
+          "url": "app-access-permission",
+          "name": "Permissions",
+          "slug": "app-access-permission"
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "pages",
+      "submenu": [
+        {
+          "name": "User Profile",
+          "slug": "pages-profile",
+          "submenu": [
+            {
+              "url": "pages-profile-user",
+              "name": "Profile",
+              "slug": "pages-profile-user"
+            },
+            {
+              "url": "pages-profile-teams",
+              "name": "Teams",
+              "slug": "pages-profile-teams"
+            },
+            {
+              "url": "pages-profile-projects",
+              "name": "Projects",
+              "slug": "pages-profile-projects"
+            },
+            {
+              "url": "pages-profile-connections",
+              "name": "Connections",
+              "slug": "pages-profile-connections"
+            }
+          ]
+        },
+        {
+          "name": "Account Settings",
+          "slug": "pages-account-settings",
+          "submenu": [
+            {
+              "url": "pages-account-settings-account",
+              "name": "Account",
+              "slug": "pages-account-settings-account"
+            },
+            {
+              "url": "pages-account-settings-security",
+              "name": "Security",
+              "slug": "pages-account-settings-security"
+            },
+            {
+              "url": "pages-account-settings-billing",
+              "name": "Billing & Plans",
+              "slug": "pages-account-settings-billing"
+            },
+            {
+              "url": "pages-account-settings-notifications",
+              "name": "Notifications",
+              "slug": "pages-account-settings-notifications"
+            },
+            {
+              "url": "pages-account-settings-connections",
+              "name": "Connections",
+              "slug": "pages-account-settings-connections"
+            }
+          ]
+        },
+        {
+          "url": "pages-faq",
+          "name": "FAQ",
+          "slug": "pages-faq"
+        },
+        {
+          "url": "pages-pricing",
+          "name": "Pricing",
+          "slug": "pages-pricing"
+        },
+        {
+          "name": "Misc",
+          "slug": "pages-misc",
+          "submenu": [
+            {
+              "url": "pages-misc-error",
+              "name": "Error",
+              "slug": "pages-misc-error",
+              "target": "_blank"
+            },
+            {
+              "url": "pages-misc-under-maintenance",
+              "name": "Under Maintenance",
+              "slug": "pages-misc-under-maintenance",
+              "target": "_blank"
+            },
+            {
+              "url": "pages-misc-comingsoon",
+              "name": "Coming Soon",
+              "slug": "pages-misc-comingsoon",
+              "target": "_blank"
+            },
+            {
+              "url": "pages-misc-not-authorized",
+              "name": "Not Authorized",
+              "slug": "pages-misc-not-authorized",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
